@@ -67,9 +67,9 @@ const Navbar = () => {
                 onClick={toggleMobileMenu}
               >
                 {isMobileMenuOpen ? (
-                  <FaTimes className="m-2 h-6 w-5" />
+                  <FaTimes className="m-2 h-6 w-5 mr-8" />
                 ) : (
-                  <FaBars className="m-2 h-6 w-5 " />
+                  <FaBars className="m-2 h-6 w-5 mr-8" />
                 )}
               </button>
             </div>

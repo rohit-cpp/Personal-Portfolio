@@ -1,33 +1,19 @@
 import React from "react";
 import carlImg from "../assets/carl.jpeg";
-
 import { HERO } from "../constants";
-
+import { motion } from "framer-motion";
 import { SOCIAL_MEDIA_LINKS } from "../constants";
-
-//     <div className="mb-8 mt-20">
-//       <div className="flex items-center justify-center">
-//         <img src={logo} width={200} className="my-20" />
-//       </div>
-{
-  /* <div className="flex items-center justify-center gap-8">
-  {SOCIAL_MEDIA_LINKS.map((link, index) => (
-    <a key={index} href={link.href} target="_blank" rel="noopener noreferrer">
-      {link.icon}
-    </a>
-  ))}
-</div>; */
-}
-//       <p></p>
-//     </div>
-//   );
-// };
 
 const Hero = () => {
   return (
     <div id="Home">
       <section className="flex min-h-screen flex-wrap items-center p-5">
-        <div className="w-full md:w-1/2 mt-6">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="w-full md:w-1/2 mt-6"
+        >
           <h2 className="my-2 p-2 text-6xl font-bold md:text-7xl lg:text-[6.5rem]">
             {HERO.name}
           </h2>
@@ -35,29 +21,50 @@ const Hero = () => {
             {HERO.greet}
           </p>
           <p className="mb-8 p-2 text-xl">{HERO.description}</p>
-        </div>
-        <div className="w-full md:w-1/2 lg:p-8">
-          <div className="flex justify-center">
+        </motion.div>
+        <motion.div
+          initial={{
+            opacity: 0,
+            scale: 0.8,
+          }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className="w-full md:w-1/2 lg:p-8"
+        >
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="flex justify-center"
+          >
             <img
               src={carlImg}
               className="border rounded-xl"
               alt="Rohit Gawande"
             />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </section>
-      <div className="flex gap-8 justify-evenly">
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        className="flex gap-8 justify-evenly mt-8"
+      >
         {SOCIAL_MEDIA_LINKS.map((link, index) => (
-          <a
+          <motion.a
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.2, delay: index * 0.3 }}
             key={index}
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
           >
             {link.icon}
-          </a>
+          </motion.a>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

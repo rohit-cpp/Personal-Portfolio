@@ -1,9 +1,12 @@
 import logo from "../assets/logo.png";
-
+import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <div>
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.7 }}
         className="pt-10 px-4 md:px-20 lg:px-32 w-full overflow-hidden "
         id="Footer"
       >
@@ -58,7 +61,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 py-4 mt-10 text-center text-gray-500">
           Copyright 2024 © Rohit Gawande. All Right Reserved
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
