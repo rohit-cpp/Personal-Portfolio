@@ -4,7 +4,8 @@ import { EDUCATION } from "../constants";
 const Education = () => {
   return (
     <section className="py-8 pt-20" id="education">
-      <h2 className="mb-4 text-center text-3xl font-bold">Education</h2>
+      <h2 className="mb-4 text-center text-4xl font-semibold">Education </h2>
+
       {EDUCATION.map((edu, index) => (
         <div key={index} className="mb-6 p-10">
           <h3 className="text-xl font-semibold">{edu.degree}</h3>
