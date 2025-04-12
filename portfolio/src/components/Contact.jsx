@@ -36,7 +36,9 @@ const Contact = () => {
       className="text-center p-6 py-20 lg:px-20 w-full overflow-hidden"
       id="contact"
     >
-      <h2 className="text-4xl font-semibold mb-2 text-center">Contact</h2>
+      <h2 className="text-4xl font-semibold mb-2 text-center text-[#ffaa00]">
+        Contact Me
+      </h2>
 
       <motion.form
         initial={{ opacity: 0 }}

@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-start">
           <div className="w-full md:w-1/3 mb-8 md:mb-0">
             <div className="flex items-center">
-              <img src={logo} width={200} className="my-2" />
+              <h2 className=" text-4xl text-[#ffaa00]"> Rohit Gawande</h2>
             </div>
             <p className="text-gray-400 mt-4">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -22,7 +22,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="w-full md:w-1/5 mb-8 md:mb-0">
-            <h3 className="text-white text-lg font-bold mb-4">Company</h3>
+            <h3 className="text-lg font-bold mb-4 text-[#ffaa00]">Company</h3>
             <ul className="flex flex-col gap-2 text-gray-400">
               <a href="#Home" className="hover:text-yellow-400">
                 Home
@@ -39,7 +39,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="w-full md:w-1/3 ">
-            <h3 className="text-white text-lg font-bold mb-4 ">
+            <h3 className="text-lg font-bold mb-4 text-[#ffaa00] ">
               Subscribe to our NewsLetter
             </h3>
             <p className="text-gray-400 mb-4 max-w-80">

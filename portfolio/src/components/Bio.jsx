@@ -11,9 +11,9 @@ const Bio = () => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-center text-4xl font-semibold lg:text-4xl"
+          className="text-center text-4xl font-semibold lg:text-4xl text-[#ffaa00]"
         >
-          Bio
+          About Me
         </motion.h2>
 
         <motion.div

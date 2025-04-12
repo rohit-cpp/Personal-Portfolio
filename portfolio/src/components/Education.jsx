@@ -9,9 +9,9 @@ const Education = () => {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="mb-4 text-center text-4xl font-semibold"
+        className="mb-4 text-center text-4xl font-semibold text-[#ffaa00]"
       >
-        Education{" "}
+        My Education{" "}
       </motion.h2>
 
       {EDUCATION.map((edu, index) => (

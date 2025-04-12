@@ -8,9 +8,9 @@ const Projects = () => {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: -20 }}
         transition={{ duration: 0.8 }}
-        className="mb-8 text-center text-4xl font-semibold lg:text-4xl"
+        className="mb-8 text-center text-4xl font-semibold lg:text-4xl text-[#ffaa00]"
       >
-        Projects
+        My Projects
       </motion.h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((project) => (

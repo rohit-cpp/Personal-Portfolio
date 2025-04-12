@@ -43,7 +43,7 @@ export const PROJECTS = [
     name: "Personal Portfolio",
     description:
       "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
-    image: projectImage1,
+    image: projectImage5,
     githubLink: "https://github.com/user/personal-portfolio",
   },
   {
@@ -67,7 +67,7 @@ export const PROJECTS = [
     name: "Weather App",
     description:
       "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
-    image: projectImage4,
+    image: projectImage6,
     githubLink: "https://github.com/user/weather-app",
   },
   {
@@ -75,7 +75,7 @@ export const PROJECTS = [
     name: "Blog Platform",
     description:
       "A blogging platform developed with Next.js and Markdown for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
-    image: projectImage5,
+    image: projectImage4,
     githubLink: "https://github.com/user/blog-platform",
   },
   {
@@ -83,7 +83,7 @@ export const PROJECTS = [
     name: "Chat Application",
     description:
       "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
-    image: projectImage6,
+    image: projectImage1,
     githubLink: "https://github.com/user/chat-application",
   },
 ];
