@@ -4,7 +4,7 @@ const Bio = () => {
   return (
     <div>
       <section
-        className="flex flex-col justify-around gap-12 m-8 pt-10"
+        className="flex flex-col justify-around gap-12 m-8 mx-10 sm:mx-20 pt-20"
         id="bio"
       >
         <h2 className="text-center text-3xl lg:text-4xl">Bio</h2>
