@@ -40,15 +40,13 @@ const Contact = () => {
       id="contact"
     >
       <h2 className="text-4xl font-semibold mb-2 text-center">Contact</h2>
-      <p className="text-center text-gray-500 mb-12 max-w-80 mx-auto">
-        Ready to make your Move? Lets build your future Together
-      </p>
+
       <form
         onSubmit={onSubmit}
         className="max-w-2xl mx-auto text-gray-600 pt-8"
       >
         <div className="flex flex-wrap">
-          <div className="w-full md:w-1/2 text-left">
+          <div className="text-white w-full md:w-1/2 text-left">
             Your Name
             <input
               className="w-full border border-gray-300 rounded py-3 px-4 mt-2"
@@ -58,7 +56,7 @@ const Contact = () => {
               required
             />
           </div>
-          <div className="w-full md:w-1/2 text-left md:pl-4">
+          <div className="text-white w-full md:w-1/2 text-left md:pl-4">
             Your Email
             <input
               className="w-full border border-gray-300 rounded py-3 px-4 mt-2"
@@ -69,7 +67,7 @@ const Contact = () => {
             />
           </div>
         </div>
-        <div className="my-6 text-left">
+        <div className="text-white my-6 text-left">
           Message
           <textarea
             className="w-full border border-gray-300 rounded py-3 px-4 mt-2 h-48 resize-none"
@@ -78,7 +76,7 @@ const Contact = () => {
             required
           ></textarea>
         </div>
-        <button className="bg-blue-600 text-white py-2 px-12 mb-10 rounded">
+        <button className="bg-blue-600 text-white py-2 px-12 mb-10 rounded cursor-pointer">
           {result ? result : "Send Message"}
         </button>
       </form>

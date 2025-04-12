@@ -9,6 +9,7 @@ import WorkExperience from "./components/WorkExperience";
 import Education from "./components/Education";
 import ContactForm from "./components/Contact";
 import { ToastContainer } from "react-toastify";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <div className="relative h-full overflow-y-hidden antialiased">
@@ -27,6 +28,7 @@ const App = () => {
       <WorkExperience />
       <Education />
       <ContactForm />
+      <Footer />
     </div>
   );
 };

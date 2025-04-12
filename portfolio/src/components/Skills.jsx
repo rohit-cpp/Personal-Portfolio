@@ -2,7 +2,7 @@ import { SKILLS } from "../constants";
 
 const Skills = () => {
   return (
-    <div className="container mx-auto pt-1" id="skills">
+    <div className="container mx-auto pt-1 px-8" id="skills">
       <h2 className="mb-12 mt-20 text-center text-4xl font-semibold">
         Skills{" "}
       </h2>

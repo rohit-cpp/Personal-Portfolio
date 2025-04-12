@@ -2,7 +2,7 @@ import { PROJECTS } from "../constants";
 import { MdArrowOutward } from "react-icons/md";
 const Projects = () => {
   return (
-    <section className="pt-20 m-8" id="projects">
+    <section className="pt-20 p-8" id="projects">
       <h2 className="mb-8 text-center text-4xl font-semibold lg:text-4xl">
         Projects
       </h2>
