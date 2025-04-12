@@ -50,13 +50,3 @@ This portfolio includes the following fully functional sections:
 
 ---
 
-## 📦 Installation
-
-Clone the repo and run it locally:
-
-```bash
-git clone https://github.com/rohit-cpp/your-portfolio-repo.git
-cd your-portfolio-repo
-npm install
-npm run dev
-
