@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&family=Outfit:wght@100..900&family=Prata&display=swap");
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #ffaa00;
+  --color-primary-hover: #e69900;
+  --color-primary-light: rgba(255, 170, 0, 0.1);
+}
+
+html {
+  touch-action: manipulation;
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;
@@ -12,6 +23,25 @@ body {
   color: white;
 }
 
-.bg-img {
-  background-image: url("./assets/bg-img2.png");
+*:focus-visible {
+  outline: 2px solid #ffaa00;
+  outline-offset: 2px;
+}
+
+.bg-gradient {
+  background: radial-gradient(ellipse at 30% 20%, rgba(255, 170, 0, 0.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 70% 60%, rgba(255, 170, 0, 0.05) 0%, transparent 50%),
+              #000;
+}
+
+.bg-grid {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 80px 80px;
+  animation: gridPulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes gridPulse {
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
 }
