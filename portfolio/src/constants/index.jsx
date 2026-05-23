@@ -6,6 +6,8 @@ import {
   FaDocker,
   FaGitAlt,
   FaAws,
+  FaDiscord,
+  FaXTwitter,
 } from "react-icons/fa6";
 import {
   SiTypescript,
@@ -67,7 +69,9 @@ export const PROJECTS = [
     description:
       "Next.js · TypeScript · PostgreSQL · React · RabbitMQ — Reduced database reads by ~60% using Redis cache-aside with cursor pagination and TTL-based caching. Event-driven cache invalidation via RabbitMQ durable queues. Eliminated duplicate submissions through idempotency-key middleware with 24-hour TTL. Improved debugging by ~40% with correlation-ID logging and centralized error handling. Dockerized on AWS EC2.",
     image: projectImage2,
-    githubLink: "https://github.com/rohit-cpp/Microservices-Blogging-Platform",
+    frontendRepo: "https://github.com/rohit-cpp/Blog-fronted",
+    backendRepo: "https://github.com/rohit-cpp/Blog-backend",
+    liveLink: "https://blog-fronted-khaki.vercel.app/",
   },
   {
     id: 3,
@@ -76,6 +80,7 @@ export const PROJECTS = [
       "MERN · Socket.IO · Gemini API · Tiptap — AI-powered collaborative team workspace built in 7 days. Real-time document editing with version control, AI grammar/SEO tools, suggestion system, and role-based team management. Features rephrase, summarize, translate, and title generation powered by Gemini API.",
     image: projectImage3,
     githubLink: "https://github.com/rohit-cpp/MERN-TeamScript",
+    liveLink: "https://teamscript.onrender.com/",
   },
   {
     id: 4,
@@ -84,6 +89,7 @@ export const PROJECTS = [
       "MongoDB · Express · React · Node.js · JWT · Gemini AI — Job portal with recruiter/student dashboards, role-based access, job posting/filtering, and AI-powered rejection feedback. Includes career roadmap generator providing personalized AI-curated learning paths based on user interests and goals.",
     image: projectImage4,
     githubLink: "https://github.com/rohit-cpp/MERN-JOB-PORTAL",
+    liveLink: "https://job-portal-frontend-ochre-beta.vercel.app/",
   },
   {
     id: 5,
@@ -92,6 +98,7 @@ export const PROJECTS = [
       "Next.js 15 · TypeScript · Neon DB · Prisma · Clerk Auth — Full-stack sleep tracking application with mood correlation. Interactive charts via react-chartjs-2 showing daily sleep hours and mood patterns. Best/worst day tracking, secure authentication, and serverless PostgreSQL on Neon DB.",
     image: projectImage6,
     githubLink: "https://github.com/rohit-cpp/Sleep-Tracker",
+    liveLink: "https://sleep-tracker-mu.vercel.app/",
   },
   {
     id: 6,
@@ -108,6 +115,7 @@ export const PROJECTS = [
       "MongoDB · Express · React · Node.js · Context API — Fully functional food e-commerce website with category-based browsing, cart management with quantity controls, price/discount display, and full-stack deployment. Responsive UI built with Tailwind CSS.",
     image: projectImage5,
     githubLink: "https://github.com/rohit-cpp/Mern-Stack-Food-App",
+    liveLink: "https://mern-ivory-sigma.vercel.app/",
   },
   {
     id: 8,
@@ -115,7 +123,116 @@ export const PROJECTS = [
     description:
       "Python · Flask · SQL · Pandas · ML — Production-style ML-powered financial analysis system with interactive dashboard. Generates structured insights for companies using stock data APIs. Supports MySQL/SQLite with environment-based configuration and sample data loading scripts.",
     image: projectImage2,
-    githubLink: "https://github.com/rohit-cpp/Bluestock-ml-analysis",
+    frontendRepo: "https://github.com/rohit-cpp/Bluestock",
+    backendRepo: "https://github.com/rohit-cpp/bluestock_backend",
+  },
+  {
+    id: 9,
+    name: "Expense Tracker",
+    description:
+      "MERN · MongoDB · Express · React · Node.js — Full-stack expense tracking application with income/expense management, category-based filtering, and interactive dashboards. Features secure authentication, real-time balance updates, and responsive design.",
+    image: projectImage3,
+    githubLink: "https://github.com/rohit-cpp/Intership-Expense-Tracker",
+    liveLink: "https://expense-tracker-omega-black.vercel.app",
+  },
+  {
+    id: 10,
+    name: "Virtual Dog Simulator",
+    description:
+      "React · JavaScript — Interactive virtual dog simulator with user interactions, animations, and responsive design. Built as a fun engaging web application.",
+    image: projectImage1,
+    githubLink: "https://github.com/rohit-cpp/Intersnship-Virtual-Dog-Simulator-",
+    liveLink: "https://virtual-dog-simulator.vercel.app",
+  },
+  {
+    id: 11,
+    name: "Memory Card Game",
+    description:
+      "React · JavaScript — Interactive memory card matching game with card flip animations, score tracking, and responsive design. Test and improve memory skills.",
+    image: projectImage4,
+    githubLink: "https://github.com/rohit-cpp/Internship-Memory-Card-Game",
+    liveLink: "https://internship-memory-card-game.vercel.app",
+  },
+  {
+    id: 12,
+    name: "Interactive Map App",
+    description:
+      "React · JavaScript — Interactive map-based web application with markers, location data visualization, and responsive UI. Built for exploring geographic data.",
+    image: projectImage6,
+    githubLink: "https://github.com/rohit-cpp/Internship-Interactive-Map",
+    liveLink: "https://internship-interactive-map.vercel.app",
+  },
+  {
+    id: 13,
+    name: "Interactive Infographics",
+    description:
+      "React · JavaScript — Dynamic infographics web application presenting data visually with interactive charts, animations, and responsive design.",
+    image: projectImage2,
+    githubLink: "https://github.com/rohit-cpp/Internship---Interactive-Infographics",
+    liveLink: "https://interactive-infographics-puce.vercel.app",
+  },
+  {
+    id: 14,
+    name: "Calculator App",
+    description:
+      "React · JavaScript — Feature-rich calculator web application with standard arithmetic operations, clean UI, and responsive design for all devices.",
+    image: projectImage5,
+    githubLink: "https://github.com/rohit-cpp/Internship-Calculator",
+    liveLink: "https://internship-two-sable.vercel.app/",
+  },
+  {
+    id: 15,
+    name: "Responsive Real Estate Website",
+    description:
+      "HTML · CSS · JavaScript — Fully responsive real estate landing page with property listings, modern design, and cross-device compatibility.",
+    image: projectImage3,
+    githubLink: "https://github.com/rohit-cpp/responsive-realstate-website",
+    liveLink: "https://rohit-cpp.github.io/responsive-realstate-website/",
+  },
+  {
+    id: 16,
+    name: "React Shopping Cart",
+    description:
+      "React · JavaScript — Full-featured shopping cart application with product listing, cart management, quantity controls, and responsive UI.",
+    image: projectImage1,
+    githubLink: "https://github.com/rohit-cpp/Final-React-Shopping-Cart",
+    liveLink: "https://rohit-cpp.github.io/Final-React-Shopping-Cart/",
+  },
+  {
+    id: 17,
+    name: "Food Recipe App",
+    description:
+      "React · JavaScript — Recipe discovery web application with meal categories, ingredient lists, cooking instructions, and responsive design.",
+    image: projectImage4,
+    githubLink: "https://github.com/rohit-cpp/food-recipe-app-using-react",
+    liveLink: "https://rohit-cpp.github.io/food-recipe-app-using-react/",
+  },
+  {
+    id: 18,
+    name: "Rock Paper Scissors Game",
+    description:
+      "JavaScript · HTML · CSS — Classic rock paper scissors game with interactive UI, score tracking, and responsive design for desktop and mobile.",
+    image: projectImage6,
+    githubLink: "https://github.com/rohit-cpp/rock-paper-scissor",
+    liveLink: "https://rohit-cpp.github.io/rock-paper-scissor/",
+  },
+  {
+    id: 19,
+    name: "Tic Tac Toe Game",
+    description:
+      "JavaScript · HTML · CSS — Classic tic tac toe game with two-player mode, win detection, and clean responsive interface.",
+    image: projectImage2,
+    githubLink: "https://github.com/rohit-cpp/tic_tak_toe_game",
+    liveLink: "https://rohit-cpp.github.io/tic_tak_toe_game/",
+  },
+  {
+    id: 20,
+    name: "Food Website",
+    description:
+      "HTML · CSS · JavaScript — Responsive food-themed website with menu displays, attractive food imagery, and modern web design.",
+    image: projectImage5,
+    githubLink: "https://github.com/rohit-cpp/food_website",
+    liveLink: "https://rohit-cpp.github.io/food_website/",
   },
 ];
 
@@ -279,8 +396,16 @@ export const EDUCATION = [
 
 export const SOCIAL_MEDIA_LINKS = [
   {
+    href: "https://discord.gg/rohit.ai",
+    icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
+  },
+  {
     href: "https://www.linkedin.com/in/rohit-gawande/",
     icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
+  },
+  {
+    href: "https://x.com/@rrgawanderohit",
+    icon: <FaXTwitter fontSize={25} className="hover:opacity-80" />,
   },
   {
     href: "https://github.com/rohit-cpp/",

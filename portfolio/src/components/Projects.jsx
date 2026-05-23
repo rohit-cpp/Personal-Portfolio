@@ -64,14 +64,48 @@ const Projects = () => {
                 <div className="p-4">
                   <h3 className="text-lg font-semibold text-white">{project.name}</h3>
                   <p className="mt-1 text-sm text-stone-400 line-clamp-2">{project.description}</p>
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-3 inline-flex items-center gap-1 text-sm text-primary hover:text-primary-hover transition-colors"
-                  >
-                    View on GitHub <MdArrowOutward />
-                  </a>
+                  <div className="mt-3 flex flex-wrap gap-3">
+                    {project.liveLink && (
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-sm text-primary hover:text-primary-hover transition-colors"
+                      >
+                        Live Demo <MdArrowOutward />
+                      </a>
+                    )}
+                    {project.frontendRepo && (
+                      <a
+                        href={project.frontendRepo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-sm text-stone-400 hover:text-white transition-colors"
+                      >
+                        Frontend <MdArrowOutward />
+                      </a>
+                    )}
+                    {project.backendRepo && (
+                      <a
+                        href={project.backendRepo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-sm text-stone-400 hover:text-white transition-colors"
+                      >
+                        Backend <MdArrowOutward />
+                      </a>
+                    )}
+                    {project.githubLink && (
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-sm text-stone-400 hover:text-white transition-colors"
+                      >
+                        GitHub <MdArrowOutward />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </TiltCard>
