@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import carlImg from "../assets/carl.jpeg";
+import rohitImg from "../assets/rohit.jpg";
 import { HERO } from "../constants";
 import { motion } from "framer-motion";
 import { SOCIAL_MEDIA_LINKS } from "../constants";
@@ -76,7 +76,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-primary/40 to-yellow-500/40 blur-lg" />
               <img
-                src={carlImg}
+                src={rohitImg}
                 className="relative border rounded-xl w-90 h-90 object-cover"
                 alt="Rohit Gawande"
               />
